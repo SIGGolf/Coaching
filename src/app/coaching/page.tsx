@@ -843,16 +843,13 @@ Welcome to Substantia Intelligence™, a groundbreaking assessment system design
                       <div className="text-2xl font-bold text-lime-300">{lesson.price}</div>
                       <div className="text-sm text-gray-300">{lesson.duration}</div>
                     </div>
-                    <button 
-                      className="w-full bg-gradient-to-r from-green-500 to-lime-500 text-white py-3 px-4 rounded-lg font-semibold shadow-lg hover:scale-105 transition-transform"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        // Add booking logic here
-                        console.log(`Booking: ${lesson.title}`);
-                      }}
+                    <a
+                      href={`mailto:lincoln@substantiaintelligence.co.uk?subject=Booking: ${lesson.title}&body=Hi Lincoln,%0D%0A%0D%0AI'd like to book the ${lesson.title} session.%0D%0A%0D%0APrice: ${lesson.price} ${lesson.duration}%0D%0A%0D%0APlease let me know your availability.%0D%0A%0D%0AThanks!`}
+                      className="w-full bg-gradient-to-r from-green-500 to-lime-500 text-white py-3 px-4 rounded-lg font-semibold shadow-lg hover:scale-105 transition-transform inline-block text-center"
+                      onClick={(e) => e.stopPropagation()}
                     >
                       Book Now
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -896,7 +893,7 @@ Welcome to Substantia Intelligence™, a groundbreaking assessment system design
       <section id="contact" className="py-16 px-4 text-center bg-black/40 backdrop-blur-md border-t border-green-500/20">
         <h2 className="text-2xl md:text-3xl font-bold mb-4 text-lime-200">Ready to Get Started?</h2>
         <p className="text-lg text-lime-100 mb-8">Contact me to book your first session or ask any questions. I look forward to helping you play your best golf!</p>
-        <a href="mailto:your.email@example.com" className="inline-block bg-gradient-to-r from-green-500 to-lime-500 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition-transform">Book Now</a>
+        <a href="mailto:lincoln@substantiaintelligence.co.uk" className="inline-block bg-gradient-to-r from-green-500 to-lime-500 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition-transform">Book Now</a>
       </section>
 
       {/* Know Yourself Better Than Anyone */}
